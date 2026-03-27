@@ -21,12 +21,14 @@ button {
 <body>
 
 <h1>The Cat in the Street</h1>
+    <img id="catImage" src="cat.jpg" width="300">
 <p id="story">While walking outside, you see a small cat.</p>
 
 <button onclick="feedCat()">1. Give the cat food</button>
 <button onclick="walkAway()">2. Walk away</button>
 
 <script>
+    document.getElementById("catImage").src = "happycat.jpg";
 function feedCat() {
     document.getElementById("story").innerText =
     "The cat follows you home and becomes your new pet. Cute Ending!";
