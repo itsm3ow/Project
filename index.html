@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>The Cat in the Street</title>
+<title>The Cat in the Street</title><br><br>
+<button onclick="restartGame()">Restart Game</button>
 <style>
 body {
     font-family: Arial;
@@ -35,7 +36,12 @@ function walkAway() {
     document.getElementById("story").innerText =
     "The cat disappears into a small alley and you never see it again. Mysterious Ending!";
 }
-</script>
+</script>function restartGame() {
+    document.getElementById("story").innerText =
+    "While walking outside, you see a small cat.";
+
+    document.getElementById("catImage").src = "cat.jpg";
+}
 
 </body>
 </html>
