@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Cat in the Street</title>
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #e8f5e9;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>The Cat in the Street</h1>
+<p id="story">While walking outside, you see a small cat.</p>
+
+<button onclick="feedCat()">1. Give the cat food</button>
+<button onclick="walkAway()">2. Walk away</button>
+
+<script>
+function feedCat() {
+    document.getElementById("story").innerText =
+    "The cat follows you home and becomes your new pet. Cute Ending!";
+}
+
+function walkAway() {
+    document.getElementById("story").innerText =
+    "The cat disappears into a small alley and you never see it again. Mysterious Ending!";
+}
+</script>
+
+</body>
+</html>
